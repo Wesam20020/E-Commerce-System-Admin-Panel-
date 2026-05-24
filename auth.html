@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Phonix - Authentication</title>
+  <meta name="description" content="Official phones, accessories, deals, and support for shoppers in Turkey.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/app.js"></script>
+</head>
+<body data-page="auth">
+  <div class="site-shell">
+    
+<header class="topbar">
+  <div class="container">
+    <div class="topbar-inner">
+      <a class="brand" href="index.php">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Phonix</span>
+      </a>
+      <nav class="nav-links desktop-nav" aria-label="Primary navigation"><a href="index.php">Home</a><a href="smartphones.html" class="">Smartphones</a><a href="accessories.html" class="">Accessories</a><a href="deals.html" class="">Deals</a><a href="new-arrivals.html" class="">New Arrivals</a><a href="brands.html" class="">Brands</a><a href="support.html" class="">Support</a></nav>
+      <div class="top-actions">
+        <form class="search-form-inline js-search-form desktop-only" action="search.html" style="min-width:260px">
+          <input type="search" name="q" placeholder="Search products, brands, or categories">
+          <button class="icon-btn search-btn" type="submit" aria-label="Search">⌕</button>
+        </form>
+        <button class="icon-btn js-theme" type="button" title="Toggle theme">🌙</button>
+        <a class="icon-btn desktop-only" href="wishlist.html" title="Wishlist" style="position:relative">♡<span class="count js-wishlist-count">0</span></a>
+        <a class="icon-btn desktop-only" href="checkout.html" title="Cart" style="position:relative">🛒<span class="count js-cart-count">0</span></a>
+        <a class="icon-btn desktop-only" href="account.html" title="Account">👤</a>
+        <button class="icon-btn mobile-toggle js-mobile-toggle" type="button" title="Menu">☰</button>
+      </div>
+    </div>
+    <nav class="mobile-nav"><a href="index.php">Home</a><a href="smartphones.html">Smartphones</a><a href="accessories.html">Accessories</a><a href="deals.html">Deals</a><a href="new-arrivals.html">New Arrivals</a><a href="brands.html">Brands</a><a href="support.html">Support</a><a href="wishlist.html">Wishlist</a><a href="auth.html">Sign In</a></nav>
+  </div>
+</header>
+<div class="js-toast" style="position:fixed;left:50%;transform:translateX(-50%);bottom:22px;z-index:200;background:var(--text);color:var(--bg);padding:.85rem 1rem;border-radius:999px;display:none"></div>
+
+    <main>
+<section class="container">
+  <div class="auth-wrap">
+    <article class="card auth-card">
+      <h1 style="font-size:2.2rem;letter-spacing:-.05em;margin:0 0 .45rem">Welcome Back</h1>
+      <p class="muted">Sign in to continue exploring phones, accessories, and deals.</p>
+      <form id="auth-form" class="form-stack" style="margin-top:1rem">
+        <label>Email address<input type="email" placeholder="you@example.com" required></label>
+        <label>Password<input type="password" placeholder="••••••••" required></label>
+        <div class="row space-between" style="gap:1rem;flex-wrap:wrap">
+          <a class="small-link" href="support.html">Forgot password?</a>
+          <span class="muted small">Demo sign-in only</span>
+        </div>
+        <button class="primary-btn" type="submit">Sign In</button>
+      </form>
+    </article>
+    <article class="card benefits-card">
+      <h2 style="font-size:1.9rem;letter-spacing:-.05em;margin:0 0 .9rem">Create an Account</h2>
+      <div class="helper-grid">
+        <div class="benefit"><div class="benefit-icon">↻</div><div><strong>Synced Experience</strong><p class="muted">Access your wishlist and cart across devices.</p></div></div>
+        <div class="benefit"><div class="benefit-icon">⚡</div><div><strong>Faster Checkout</strong><p class="muted">Save shipping and payment details for smoother orders.</p></div></div>
+        <div class="benefit"><div class="benefit-icon">◎</div><div><strong>Order Tracking</strong><p class="muted">View history and track current shipments in one place.</p></div></div>
+      </div>
+      <div style="margin-top:1.25rem">
+        <a class="outline-btn" href="account.html" style="display:inline-block">Register Now</a>
+      </div>
+    </article>
+  </div>
+</section>
+</main>
+    
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="brand footer-brand" href="index.php">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Phonix</span>
+      </a>
+      <p class="footer-copy">Official phones, trusted accessories, and clear support for shoppers in Turkey.</p>
+    </div>
+    <div>
+      <h3>Shop</h3>
+      <p><a href="smartphones.html">Smartphones</a></p>
+      <p><a href="accessories.html">Accessories</a></p>
+      <p><a href="deals.html">Deals</a></p>
+      <p><a href="new-arrivals.html">New Arrivals</a></p>
+    </div>
+    <div>
+      <h3>Explore</h3>
+      <p><a href="brands.html">Brands</a></p>
+      <p><a href="search.html">Search</a></p>
+      <p><a href="wishlist.html">Wishlist</a></p>
+      <p><a href="account.html">Account</a></p>
+    </div>
+    <div>
+      <h3>Support</h3>
+      <p><a href="support.html">Support Center</a></p>
+      <p><a href="checkout.html">Checkout</a></p>
+      <p><a href="phone-finder.php">Find My Phone</a></p>
+      <p><a href="auth.html">Sign In</a></p>
+    </div>
+  </div>
+</footer>
+
+  </div>
+</body>
+</html>
