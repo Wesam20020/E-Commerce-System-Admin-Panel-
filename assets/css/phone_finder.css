@@ -1,0 +1,575 @@
+.phone-finder-hero {
+    padding-top: 72px;
+    padding-bottom: 56px;
+    background:
+        radial-gradient(circle at 15% 10%, rgba(94, 163, 227, .24), transparent 34%),
+        radial-gradient(circle at 86% 18%, rgba(150, 157, 182, .22), transparent 30%);
+}
+.phone-finder-hero__grid,
+.phone-finder-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(340px, .95fr);
+    gap: clamp(24px, 4vw, 48px);
+    align-items: start;
+}
+.phone-finder-hero__copy h1 {
+    max-width: 780px;
+    margin: 16px 0;
+    color: var(--on-surface, #1a1c1d);
+    font-size: clamp(44px, 7vw, 82px);
+    line-height: .98;
+    letter-spacing: -.055em;
+}
+.phone-finder-hero__copy p {
+    max-width: 720px;
+    color: var(--on-surface-variant, #414750);
+    font-size: clamp(17px, 2vw, 21px);
+    line-height: 1.7;
+}
+.phone-finder-pill,
+.phone-finder-form__badge,
+.phone-finder-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    width: fit-content;
+    border-radius: 999px;
+    padding: 9px 13px;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--on-primary-container, #00385c);
+    background: rgba(94, 163, 227, .18);
+    border: 1px solid rgba(94, 163, 227, .26);
+}
+.phone-finder-pill .material-symbols-outlined {
+    font-size: 18px;
+}
+.phone-finder-hero__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 28px;
+}
+.phone-finder-hero__panel,
+.phone-finder-form,
+.phone-finder-empty,
+.phone-finder-state,
+.phone-finder-card,
+
+.phone-finder-ai-cta .phone-finder-state {
+    align-items: center;
+    text-align: center;
+}
+.phone-finder-ai-cta .primary-btn {
+    margin-top: 8px;
+}
+
+.phone-finder-success {
+    border-radius: 32px;
+}
+.phone-finder-hero__panel {
+    padding: clamp(24px, 4vw, 36px);
+    position: sticky;
+    top: 110px;
+}
+.phone-finder-hero__panel > .material-symbols-outlined {
+    width: 58px;
+    height: 58px;
+    display: grid;
+    place-items: center;
+    border-radius: 22px;
+    margin-bottom: 22px;
+    color: var(--primary, #00629e);
+    background: rgba(255,255,255,.56);
+    box-shadow: 0 18px 38px rgba(0, 98, 158, .12);
+}
+.phone-finder-hero__panel h2,
+.phone-finder-form h2,
+.phone-finder-group__head h2,
+.phone-finder-empty h2 {
+    margin: 0;
+    color: var(--on-surface, #1a1c1d);
+    font-size: clamp(24px, 3vw, 34px);
+    letter-spacing: -.03em;
+}
+.phone-finder-hero__panel ol {
+    list-style: none;
+    padding: 0;
+    margin: 24px 0 0;
+    display: grid;
+    gap: 14px;
+}
+.phone-finder-hero__panel li {
+    display: grid;
+    gap: 3px;
+    padding: 16px;
+    border-radius: 22px;
+    background: rgba(255,255,255,.45);
+    color: var(--on-surface-variant, #414750);
+}
+.phone-finder-hero__panel li strong {
+    color: var(--on-surface, #1a1c1d);
+}
+.phone-finder-section {
+    padding-top: 42px;
+}
+.phone-finder-form {
+    padding: clamp(22px, 4vw, 34px);
+}
+.phone-finder-form__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 18px;
+    margin-bottom: 24px;
+}
+.phone-finder-form__head p,
+.phone-finder-group__head p,
+.phone-finder-empty p,
+.phone-finder-state p,
+.phone-finder-card p {
+    color: var(--on-surface-variant, #414750);
+    line-height: 1.65;
+}
+.phone-finder-eyebrow {
+    display: block;
+    color: var(--primary, #00629e);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: .12em;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+.phone-finder-fields {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+}
+.phone-finder-field,
+.phone-finder-check {
+    display: grid;
+    gap: 8px;
+}
+.phone-finder-field span,
+.phone-finder-check strong {
+    color: var(--on-surface, #1a1c1d);
+    font-weight: 800;
+    font-size: 13px;
+}
+.phone-finder-field input,
+.phone-finder-field select,
+.phone-finder-field textarea {
+    width: 100%;
+    border: 1px solid rgba(113,120,129,.28);
+    background: rgba(255,255,255,.72);
+    border-radius: 18px;
+    padding: 13px 14px;
+    outline: none;
+    color: var(--on-surface, #1a1c1d);
+    transition: border-color .2s ease, box-shadow .2s ease, background .2s ease;
+}
+.phone-finder-field textarea {
+    resize: vertical;
+    min-height: 96px;
+}
+.phone-finder-field input:focus,
+.phone-finder-field select:focus,
+.phone-finder-field textarea:focus {
+    border-color: rgba(0,98,158,.62);
+    box-shadow: 0 0 0 4px rgba(0,98,158,.1);
+    background: rgba(255,255,255,.92);
+}
+.phone-finder-field--full {
+    grid-column: 1 / -1;
+}
+.phone-finder-check {
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid rgba(113,120,129,.22);
+    border-radius: 22px;
+    background: rgba(255,255,255,.46);
+}
+.phone-finder-check input {
+    width: 20px;
+    height: 20px;
+    accent-color: var(--primary, #00629e);
+}
+.phone-finder-check small {
+    display: block;
+    color: var(--on-surface-variant, #414750);
+    margin-top: 2px;
+}
+.phone-finder-submit {
+    width: 100%;
+    margin-top: 18px;
+    justify-content: center;
+}
+.phone-finder-results {
+    min-height: 420px;
+}
+.phone-finder-empty,
+.phone-finder-state,
+
+.phone-finder-ai-cta .phone-finder-state {
+    align-items: center;
+    text-align: center;
+}
+.phone-finder-ai-cta .primary-btn {
+    margin-top: 8px;
+}
+
+.phone-finder-success {
+    padding: clamp(26px, 4vw, 42px);
+    text-align: center;
+}
+.phone-finder-empty .material-symbols-outlined,
+.phone-finder-state .material-symbols-outlined,
+.phone-finder-success .material-symbols-outlined {
+    font-size: 44px;
+    color: var(--primary, #00629e);
+    margin-bottom: 12px;
+}
+.phone-finder-result-stack,
+.phone-finder-group {
+    display: grid;
+    gap: 18px;
+}
+.phone-finder-group + .phone-finder-group {
+    margin-top: 28px;
+}
+.phone-finder-group__head {
+    padding: 4px 4px 2px;
+}
+.phone-finder-card {
+    display: grid;
+    grid-template-columns: 165px minmax(0, 1fr);
+    gap: 18px;
+    padding: 18px;
+    overflow: hidden;
+}
+.phone-finder-card--ai {
+    grid-template-columns: 165px minmax(0, 1fr);
+}
+.phone-finder-card__media {
+    display: grid;
+    place-items: center;
+    min-height: 180px;
+    border-radius: 24px;
+    background: linear-gradient(180deg, rgba(255,255,255,.35), rgba(255,255,255,.7));
+}
+.phone-finder-card__media img {
+    max-width: 100%;
+    max-height: 170px;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+}
+.phone-finder-card__media--ai {
+    background: linear-gradient(145deg, rgba(0,98,158,.12), rgba(124,58,237,.10));
+    overflow: hidden;
+}
+.phone-finder-card__media--ai img {
+    width: 100%;
+    height: 100%;
+    max-height: 180px;
+    object-fit: contain;
+    mix-blend-mode: normal;
+}
+.phone-finder-card__media--ai img[src$="phone-ai-placeholder.svg"] {
+    object-fit: cover;
+}
+.phone-finder-card__top,
+.phone-finder-card__actions,
+.phone-finder-ai-note {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+.phone-finder-card__top strong {
+    color: var(--primary, #00629e);
+}
+.phone-finder-tag {
+    padding: 7px 10px;
+    font-size: 10px;
+}
+.phone-finder-tag--ai {
+    background: rgba(150,157,182,.18);
+    border-color: rgba(150,157,182,.26);
+}
+.phone-finder-card h3 {
+    margin: 12px 0 6px;
+    color: var(--on-surface, #1a1c1d);
+    font-size: 23px;
+    line-height: 1.2;
+    letter-spacing: -.02em;
+}
+.phone-finder-specs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 14px 0;
+}
+.phone-finder-specs span {
+    border: 1px solid rgba(113,120,129,.2);
+    background: rgba(255,255,255,.46);
+    color: var(--on-surface-variant, #414750);
+    padding: 7px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 700;
+}
+.phone-finder-reasons {
+    margin: 10px 0 16px;
+    padding-left: 18px;
+    color: var(--on-surface-variant, #414750);
+}
+.phone-finder-price {
+    color: var(--on-surface, #1a1c1d);
+    font-size: 22px;
+}
+.phone-finder-muted {
+    color: var(--on-surface-variant, #414750);
+    font-size: 13px;
+    max-width: 360px;
+}
+.phone-finder-ai-note {
+    justify-content: flex-start;
+    padding: 12px 14px;
+    border-radius: 18px;
+    margin-bottom: 16px;
+    color: var(--on-surface-variant, #414750);
+    background: rgba(0,98,158,.07);
+}
+.phone-finder-ai-note .material-symbols-outlined {
+    color: var(--primary, #00629e);
+    font-size: 20px;
+}
+
+.phone-finder-ai-cta .phone-finder-state {
+    align-items: center;
+    text-align: center;
+}
+.phone-finder-ai-cta .primary-btn {
+    margin-top: 8px;
+}
+
+.phone-finder-success {
+    display: grid;
+    justify-items: center;
+    margin-bottom: 18px;
+}
+.phone-finder-modal[hidden] {
+    display: none;
+}
+.phone-finder-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 120;
+    display: grid;
+    place-items: center;
+    padding: 20px;
+}
+.phone-finder-modal__overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(15,23,42,.42);
+    backdrop-filter: blur(10px);
+}
+.phone-finder-modal__card {
+    position: relative;
+    z-index: 1;
+    width: min(520px, 100%);
+    padding: 28px;
+    border-radius: 32px;
+    background: rgba(255,255,255,.88);
+}
+.phone-finder-modal__card form {
+    display: grid;
+    gap: 14px;
+    margin-top: 18px;
+}
+.phone-finder-modal__close {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    width: 42px;
+    height: 42px;
+    display: grid;
+    place-items: center;
+    border: 0;
+    border-radius: 50%;
+    background: rgba(255,255,255,.72);
+    color: var(--on-surface, #1a1c1d);
+    cursor: pointer;
+}
+.phone-finder-modal-open {
+    overflow: hidden;
+}
+@media (max-width: 1040px) {
+    .phone-finder-hero__grid,
+    .phone-finder-layout {
+        grid-template-columns: 1fr;
+    }
+    .phone-finder-hero__panel {
+        position: static;
+    }
+}
+@media (max-width: 700px) {
+    .phone-finder-hero {
+        padding-top: 44px;
+    }
+    .phone-finder-fields,
+    .phone-finder-card {
+        grid-template-columns: 1fr;
+    }
+    .phone-finder-form__head,
+    .phone-finder-card__actions {
+        align-items: stretch;
+        flex-direction: column;
+    }
+    .phone-finder-card__actions .primary-btn,
+    .phone-finder-hero__actions .primary-btn,
+    .phone-finder-hero__actions .secondary-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* Recommendation image resilience: keep cards visual even when remote sources fail. */
+.phone-finder-card__media {
+    position: relative;
+    min-height: 210px;
+    background: radial-gradient(circle at 30% 20%, rgba(255,255,255,.75), rgba(255,255,255,.34) 36%, rgba(148,163,184,.16) 100%);
+}
+.phone-finder-card__media::before {
+    content: '';
+    position: absolute;
+    inset: 18px;
+    border-radius: 24px;
+    border: 1px solid rgba(148,163,184,.22);
+    pointer-events: none;
+}
+.phone-finder-card__media img {
+    position: relative;
+    z-index: 1;
+    width: min(100%, 220px);
+    max-height: 190px;
+    object-fit: contain;
+    mix-blend-mode: normal;
+}
+.phone-finder-card__media--ai img,
+.phone-finder-img--fallback {
+    width: min(100%, 230px);
+    max-height: 200px;
+    filter: drop-shadow(0 18px 26px rgba(15,23,42,.18));
+}
+
+/* Mobile compatibility pass for Find My Phone */
+.phone-finder-hero,
+.phone-finder-section,
+.phone-finder-modal{
+    overflow-x: hidden;
+}
+
+.phone-finder-hero__grid,
+.phone-finder-layout,
+.phone-finder-card,
+.phone-finder-form,
+.phone-finder-results,
+.phone-finder-card__body{
+    min-width: 0;
+}
+
+.phone-finder-hero__copy h1,
+.phone-finder-hero__copy p,
+.phone-finder-card h3,
+.phone-finder-card p,
+.phone-finder-muted,
+.phone-finder-ai-note,
+.phone-finder-field span,
+.phone-finder-check span{
+    overflow-wrap: anywhere;
+}
+
+.phone-finder-card__actions .primary-btn,
+.phone-finder-card__actions a.primary-btn,
+.phone-finder-card__actions button.primary-btn{
+    text-align:center;
+}
+
+@media (max-width: 900px){
+    .phone-finder-hero{
+        padding-top: 42px;
+    }
+    .phone-finder-hero__grid,
+    .phone-finder-layout{
+        grid-template-columns: 1fr !important;
+    }
+    .phone-finder-results{
+        min-height: 0;
+    }
+}
+
+@media (max-width: 640px){
+    .phone-finder-hero__copy h1{
+        font-size: clamp(38px, 12vw, 54px);
+        line-height: 1.03;
+    }
+    .phone-finder-hero__copy p{
+        font-size: 16px;
+    }
+    .phone-finder-hero__panel,
+    .phone-finder-form,
+    .phone-finder-empty,
+    .phone-finder-state,
+    .phone-finder-card,
+    .phone-finder-modal__card{
+        border-radius: 26px;
+    }
+    .phone-finder-fields{
+        grid-template-columns: 1fr !important;
+    }
+    .phone-finder-form__head{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .phone-finder-card,
+    .phone-finder-card--ai{
+        grid-template-columns: 1fr !important;
+        padding: 16px;
+    }
+    .phone-finder-card__media{
+        min-height: 210px;
+    }
+    .phone-finder-card__media img{
+        width: min(100%, 220px);
+        max-height: 190px;
+    }
+    .phone-finder-card__actions{
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .phone-finder-card__actions .primary-btn,
+    .phone-finder-card__actions a.primary-btn,
+    .phone-finder-card__actions button.primary-btn,
+    .phone-finder-hero__actions .primary-btn,
+    .phone-finder-hero__actions .secondary-btn,
+    .phone-finder-submit{
+        width: 100%;
+        justify-content: center;
+    }
+    .phone-finder-modal{
+        padding: 12px;
+        align-items: end;
+    }
+    .phone-finder-modal__card{
+        width: 100%;
+        max-height: calc(100vh - 24px);
+        overflow: auto;
+        padding: 24px 18px;
+    }
+}

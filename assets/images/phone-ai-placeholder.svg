@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="900" viewBox="0 0 900 900" role="img" aria-label="AI phone suggestion">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#00629e"/>
+      <stop offset="1" stop-color="#7c3aed"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="28" stdDeviation="28" flood-color="#0f172a" flood-opacity=".28"/>
+    </filter>
+  </defs>
+  <rect width="900" height="900" rx="92" fill="url(#bg)"/>
+  <circle cx="180" cy="150" r="120" fill="#fff" opacity=".16"/>
+  <circle cx="760" cy="720" r="170" fill="#fff" opacity=".12"/>
+  <g filter="url(#shadow)">
+    <rect x="295" y="110" width="310" height="680" rx="54" fill="#111827"/>
+    <rect x="317" y="145" width="266" height="590" rx="34" fill="#f8fafc"/>
+    <rect x="406" y="126" width="88" height="12" rx="6" fill="#334155"/>
+    <circle cx="450" cy="760" r="15" fill="#334155" opacity=".65"/>
+  </g>
+  <rect x="346" y="205" width="208" height="208" rx="40" fill="#1e293b" opacity=".92"/>
+  <circle cx="405" cy="265" r="34" fill="#fff" opacity=".88"/>
+  <circle cx="494" cy="265" r="34" fill="#fff" opacity=".88"/>
+  <circle cx="405" cy="354" r="34" fill="#fff" opacity=".88"/>
+  <circle cx="495" cy="354" r="18" fill="#fff" opacity=".74"/>
+  <text x="450" y="548" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="42" font-weight="800" fill="#0f172a">AI suggestion</text>
+  <text x="450" y="606" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="30" font-weight="700" fill="#334155">Admin verifies image later</text>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="900" viewBox="0 0 900 900">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0f172a"/><stop offset="55%" stop-color="#2563eb"/><stop offset="100%" stop-color="#dbeafe"/></linearGradient>
+<linearGradient id="screen" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="rgba(255,255,255,.88)"/><stop offset="45%" stop-color="rgba(147,197,253,.62)"/><stop offset="100%" stop-color="rgba(15,23,42,.88)"/></linearGradient>
+<linearGradient id="caseg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#dbeafe"/><stop offset="100%" stop-color="#0f172a"/></linearGradient>
+<filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="38" stdDeviation="32" flood-color="#0f172a" flood-opacity=".28"/></filter>
+</defs>
+<rect width="900" height="900" rx="72" fill="url(#bg)"/>
+<circle cx="150" cy="150" r="180" fill="rgba(255,255,255,.14)"/>
+<circle cx="770" cy="720" r="260" fill="rgba(255,255,255,.10)"/>
+
+<g filter="url(#shadow)">
+  <rect x="300" y="240" width="300" height="370" rx="58" fill="rgba(255,255,255,.94)"/>
+  <rect x="365" y="175" width="44" height="90" rx="12" fill="#dbeafe"/>
+  <rect x="491" y="175" width="44" height="90" rx="12" fill="#dbeafe"/>
+  <path d="M366 390h168" stroke="#2563eb" stroke-width="26" stroke-linecap="round" opacity=".85"/>
+  <path d="M398 455h104" stroke="#2563eb" stroke-width="18" stroke-linecap="round" opacity=".55"/>
+</g>
+<text x="450" y="805" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="38" font-weight="700">Samsung 25W USB-C Charger</text>
+</svg>
