@@ -1,0 +1,7 @@
+Options -Indexes
+<FilesMatch "\.(svg|png|jpe?g|webp|gif)$">
+    Require all granted
+</FilesMatch>
+<FilesMatch "^(?!.*\.(svg|png|jpe?g|webp|gif)$).*$">
+    Require all denied
+</FilesMatch>

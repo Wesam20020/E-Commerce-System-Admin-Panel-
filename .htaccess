@@ -1,0 +1,18 @@
+DirectoryIndex index.php index.html
+
+RewriteEngine On
+
+RewriteRule ^smartphones\.html$ products.php [R=301,L,QSA]
+RewriteRule ^accessories\.html$ products.php?category=accessories [R=301,L,QSA]
+RewriteRule ^brands\.html$ brands.php [R=301,L,QSA]
+RewriteRule ^deals\.html$ deals.php [R=301,L,QSA]
+RewriteRule ^new-arrivals\.html$ new-arrivals.php [R=301,L,QSA]
+RewriteRule ^support\.html$ support.php [R=301,L,QSA]
+RewriteRule ^wishlist\.html$ wishlist.php [R=301,L,QSA]
+RewriteRule ^account\.html$ account.php [R=301,L,QSA]
+RewriteRule ^auth\.html$ auth.php [R=301,L,QSA]
+RewriteRule ^checkout\.html$ checkout.php [R=301,L,QSA]
+RewriteRule ^admin\.html$ admin.php [R=301,L,QSA]
+RewriteRule ^search\.html$ search.php [R=301,L,QSA]
+RewriteRule ^phone-finder\.html$ phone-finder.php [R=301,L,QSA]
+RewriteRule ^product\.html$ product.php [R=301,L,QSA]

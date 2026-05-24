@@ -1,0 +1,13 @@
+SET FOREIGN_KEY_CHECKS = 0;
+TRUNCATE TABLE order_items;
+TRUNCATE TABLE orders;
+TRUNCATE TABLE wishlist_items;
+TRUNCATE TABLE cart_items;
+TRUNCATE TABLE carts;
+TRUNCATE TABLE product_variants;
+TRUNCATE TABLE products;
+TRUNCATE TABLE categories;
+TRUNCATE TABLE users;
+TRUNCATE TABLE admins;
+TRUNCATE TABLE site_settings;
+SET FOREIGN_KEY_CHECKS = 1;
